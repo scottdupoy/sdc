@@ -32,6 +32,7 @@ app.use(session({
 
 // routes
 app.get('/', function(req, res) { res.render('home'); });
+app.get('/strava-auth', function(req, res) { res.render('home'); });
 
 // http server pulls it all together
 var server = http.Server(app);
